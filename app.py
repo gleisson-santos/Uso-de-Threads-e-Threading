@@ -19,7 +19,7 @@ def baixar_arquivos():
 
 
 nova_thread = threading.Thread(
-    target=extrair_dados_do_site, args=('http:www.devaprender.com',), deamon=True)
+    target=extrair_dados_do_site, args=('http:www.devaprender.com',), daemon=True)
 nova_thread.start()
 baixar_arquivos()
 nova_thread.join()
